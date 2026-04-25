@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescate Global | Canal Global</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/canal.css" />
+</head>
+<body class="page page--canal" data-chat-role="general">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-logo">RG</span>
+      <div>
+        <strong>Rescate Global</strong>
+      </div>
+    </div>
+
+    <div class="channel-status">
+      <span class="dot dot-green"></span>
+      Canal Global -
+      <span id="online-volunteers-count">0</span> voluntarios en linea -
+      <span id="active-incident-title">Sin emergencia activa</span>
+    </div>
+
+    <div style="display: flex; gap: 1rem; align-items: center;">
+      <div class="user-chip">Usuario</div>
+      <button id="logout-btn" style="padding: 0.5rem 1rem; background: #d4380d; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; font-weight: 500;">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="left-rail">
+      <h2>Canal activo</h2>
+      <p id="active-channel-title">Sin emergencia activa</p>
+    </aside>
+
+    <section class="chat-panel" aria-label="Canal de chat">
+      <div class="chat-divider">
+        <span></span>
+        <p id="chat-divider-title">Hoy</p>
+        <span></span>
+      </div>
+
+      <div id="chat-general" class="messages"></div>
+
+      <div id="typing-hint" class="typing-pill" aria-live="polite">
+        <span></span><span></span><span></span>
+        <em>Escribiendo...</em>
+      </div>
+    </section>
+
+    <aside class="right-rail">
+      <section class="rail-block">
+        <header>
+          <h3>EMERGENCIAS ACTIVAS</h3>
+          <span id="emergencies-counter" class="counter">0</span>
+        </header>
+        <div id="emergencies-list"></div>
+      </section>
+
+      <section class="rail-block">
+        <header>
+          <h3>NOTIFICACIONES</h3>
+          <span id="notifications-counter" class="counter">0</span>
+        </header>
+        <div id="notifications-list"></div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="composer-wrap">
+    <form class="composer" data-target="chat-general">
+      <input type="text" name="mensaje" placeholder="Escribe un mensaje para todos los voluntarios..." required />
+      <button type="submit">Enviar</button>
+    </form>
+  </footer>
+
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/canal.js"></script>
+</body>
+</html>
