@@ -2,10 +2,13 @@ const tabs = document.querySelectorAll('.tab');
 const generalFields = document.getElementById('general-fields');
 const volunteerFields = document.getElementById('volunteer-fields');
 const submitBtn = document.getElementById('submit-btn');
+<<<<<<< HEAD
 const feedback = document.getElementById('login-feedback');
 const loginForm = document.getElementById('login-form');
 
 const API_BASE_URL = 'http://localhost:3000/api';
+=======
+>>>>>>> 3dc068b7a20698960bacaacce9ae3bac17052aca
 
 function setMode(mode) {
   const isGeneral = mode === 'general';
@@ -96,4 +99,3 @@ document.querySelector('.btn-google')?.addEventListener('click', () => {
 });
 
 setMode('general');
-
