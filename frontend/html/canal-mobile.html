@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescate Global | Canal Mobile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/mobile.css" />
+</head>
+<body class="mobile-page" data-mobile-view="chat">
+  <header class="mobile-status">9:41</header>
+
+  <section class="mobile-header">
+    <h1>Rescate Global</h1>
+    <p><span class="dot"></span>Canal Global <span id="mobile-online-count">0</span> voluntarios en linea</p>
+  </section>
+
+  <main class="mobile-main">
+    <section class="mobile-view mobile-view--chat is-active" data-view="chat">
+      <div class="mobile-divider"><span></span><p id="mobile-chat-divider">Hoy</p><span></span></div>
+
+      <div id="mobile-chat-list"></div>
+
+      <div class="typing"><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="mobile-view" data-view="emergencias">
+      <header class="list-header">
+        <h2>EMERGENCIAS</h2>
+        <span id="mobile-emergencies-counter" class="badge">0</span>
+      </header>
+      <div id="mobile-emergencies-list"></div>
+    </section>
+
+    <section class="mobile-view" data-view="notificaciones">
+      <header class="list-header">
+        <h2>NOTIFICACIONES</h2>
+        <span id="mobile-notifications-counter" class="badge">0</span>
+      </header>
+      <div id="mobile-notifications-list"></div>
+    </section>
+  </main>
+
+  <footer class="mobile-footer">
+    <form class="mobile-composer" data-target-view="chat">
+      <input type="text" name="mensaje" placeholder="Escribe un mensaje..." />
+      <button type="submit" aria-label="Enviar mensaje">&gt;&gt;</button>
+    </form>
+
+    <nav class="mobile-nav" aria-label="Navegacion inferior">
+      <button type="button" class="nav-item is-active" data-target="chat">Chat</button>
+      <button type="button" class="nav-item" data-target="emergencias">Emergencias <span id="mobile-nav-emergencies-count">0</span></button>
+      <button type="button" class="nav-item" data-target="notificaciones">Notif. <span id="mobile-nav-notifications-count">0</span></button>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/mobile.js"></script>
+</body>
+</html>
