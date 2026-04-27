@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescate Global | Coordinador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/canal.css" />
+</head>
+<body class="page page--coord" data-chat-role="coordinador">
+  <header class="coord-top">
+    <div class="coord-brand">
+      <span class="brand-logo">RG</span>
+      <div>
+        <strong>Rescate Global</strong>
+        <small>Coordinacion de Emergencias</small>
+      </div>
+    </div>
+
+    <p>
+      Canal Global |
+      <span id="online-volunteers-count">0</span> voluntarios en linea |
+      <span id="active-incident-title">Sin emergencia activa</span>
+    </p>
+
+    <div class="coord-top-actions">
+      <div class="coord-user">
+        <span class="dot dot-green"></span>
+        COORDINADOR
+      </div>
+      <button id="coord-top-logout-btn" type="button">Cerrar sesion</button>
+    </div>
+  </header>
+
+  <div class="coord-alertbar">
+    <span class="dot dot-yellow"></span>
+    <span id="active-incident-banner">Sin emergencia activa</span>
+    <button id="close-incident-top-btn" type="button">Cerrar Emergencia</button>
+  </div>
+
+  <main class="coord-layout">
+    <aside class="coord-sidebar">
+      <h2>Resumen</h2>
+      <div class="stats-grid">
+        <article><strong id="stats-volunteers-total">0</strong><small>Voluntarios</small></article>
+        <article><strong id="stats-online-count" class="ok">0</strong><small>En linea</small></article>
+        <article><strong id="stats-duration">--</strong><small>Duracion</small></article>
+        <article><strong id="stats-messages-total">0</strong><small>Mensajes</small></article>
+      </div>
+
+      <h2>Acciones</h2>
+      <button id="open-emergency-btn" class="action action--warn" type="button">ABRIR EMERGENCIA</button>
+      <button id="send-alert-btn" class="action" type="button">Enviar Alerta Critica</button>
+      <button id="close-emergency-btn" class="action action--danger" type="button">CERRAR EMERGENCIA</button>
+      <button id="coord-logout-btn" class="action" type="button">Cerrar sesion</button>
+      <p class="hint">Notificara a todos los voluntarios conectados</p>
+
+      <h2>Registro de actividad</h2>
+      <ul id="activity-list" class="activity-list"></ul>
+    </aside>
+
+    <section class="coord-chat" aria-label="Chat coordinador">
+      <div class="chat-divider compact">
+        <span></span>
+        <p id="chat-divider-title">Hoy</p>
+        <span></span>
+      </div>
+
+      <div id="chat-coord" class="messages"></div>
+
+      <form class="composer composer--coord" data-target="chat-coord">
+        <input type="text" name="mensaje" placeholder="Escribir mensaje para todos los voluntarios..." required />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside class="coord-right">
+      <h2>EMERGENCIAS ACTIVAS (<span id="emergencies-counter">0</span>)</h2>
+      <div id="emergencies-list"></div>
+
+      <h2>NOTIFICACIONES (<span id="notifications-counter">0</span>)</h2>
+      <div id="notifications-list"></div>
+    </aside>
+  </main>
+
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/canal.js"></script>
+</body>
+</html>

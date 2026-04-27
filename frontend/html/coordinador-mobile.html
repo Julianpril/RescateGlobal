@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescate Global | Coordinador Mobile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/mobile.css" />
+</head>
+<body class="mobile-page mobile-page--coord">
+  <header class="mobile-status">9:41 <span>100%</span></header>
+
+  <section class="coord-mobile-header">
+    <div class="coord-row">
+      <strong>&lt;</strong>
+      <div>
+        <small>COORDINADOR</small>
+        <h1>Canal Global</h1>
+      </div>
+      <span class="online-pill"><i></i>En linea</span>
+    </div>
+    <div class="coord-alert">
+      <span></span>
+      <b id="coord-mobile-incident-title">Sin emergencia activa</b>
+      <em id="coord-mobile-incident-duration">--</em>
+    </div>
+  </section>
+
+  <main class="coord-mobile-main">
+    <section class="panel-card">
+      <h2>Resumen de Emergencia</h2>
+      <dl>
+        <div><dt>Ubicacion</dt><dd id="coord-mobile-incident-location">--</dd></div>
+        <div><dt>Voluntarios</dt><dd id="coord-mobile-volunteers-total">0</dd></div>
+        <div><dt>En linea ahora</dt><dd id="coord-mobile-online-count" class="ok">0</dd></div>
+        <div><dt>Tiempo activo</dt><dd id="coord-mobile-duration">--</dd></div>
+      </dl>
+    </section>
+
+    <section class="panel-card">
+      <h2>Acciones de Coordinador</h2>
+      <button id="coord-mobile-open-emergency-btn" class="btn-outline" type="button">Abrir Emergencia</button>
+      <button id="coord-mobile-close-emergency-btn" class="btn-solid" type="button">Cerrar Emergencia</button>
+      <button id="coord-mobile-logout-btn" class="btn-outline" type="button">Cerrar sesion</button>
+    </section>
+
+    <section class="panel-card">
+      <h2>Registro de Actividad</h2>
+      <div id="coord-mobile-activity-list"></div>
+    </section>
+  </main>
+
+  <footer class="coord-mobile-footer">
+    <form class="mobile-composer mobile-composer--coord" data-target-view="none">
+      <input type="text" name="mensaje" placeholder="Mensaje para todos..." />
+      <button type="submit" aria-label="Enviar mensaje">-&gt;</button>
+    </form>
+  </footer>
+
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/mobile.js"></script>
+</body>
+</html>
