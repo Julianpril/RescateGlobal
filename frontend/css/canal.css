@@ -51,14 +51,18 @@ body {
 .dot-yellow { background: var(--medium); }
 
 .topbar {
-  height: 80px;
-  padding: 0 20px;
+  min-height: 64px;
+  padding: 10px 20px;
   background: #111827;
-  display: grid;
-  grid-template-columns: 280px 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   color: #fff;
+  flex-wrap: wrap;
+}
+
+.topbar > :last-child {
+  margin-left: auto;
 }
 
 .brand {
@@ -92,9 +96,9 @@ body {
 }
 
 .workspace {
-  height: calc(100dvh - 170px);
+  height: calc(100dvh - 120px);
   display: grid;
-  grid-template-columns: 240px minmax(620px, 1fr) 280px;
+  grid-template-columns: 220px minmax(0, 1fr) 260px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -349,14 +353,23 @@ body {
 }
 
 .coord-top {
-  height: 56px;
+  min-height: 56px;
   background: #111827;
-  padding: 0 16px;
-  display: grid;
+  padding: 8px 16px;
+  display: flex;
   align-items: center;
-  grid-template-columns: 320px 1fr 170px;
-  gap: 14px;
+  gap: 12px;
   border-bottom: 1px solid #1f2937;
+  flex-wrap: wrap;
+}
+
+.coord-top > p {
+  flex: 1;
+  min-width: 0;
+}
+
+.coord-top-actions {
+  margin-left: auto;
 }
 
 .coord-brand {
@@ -395,6 +408,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .coord-top-actions button {
@@ -415,16 +429,21 @@ body {
 }
 
 .coord-alertbar {
-  height: 36px;
+  min-height: 36px;
   background: #c43800;
   color: #fff;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0 14px;
+  padding: 6px 14px;
   font-size: 13px;
   font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.coord-alertbar #active-incident-banner {
+  flex: 1;
+  min-width: 0;
 }
 
 .coord-alertbar button {
@@ -441,7 +460,7 @@ body {
 .coord-layout {
   min-height: calc(100dvh - 92px);
   display: grid;
-  grid-template-columns: 320px 1fr 280px;
+  grid-template-columns: 260px minmax(0, 1fr) 240px;
 }
 
 .coord-sidebar,
@@ -608,12 +627,46 @@ body {
   background: #f6f7f9;
 }
 
-@media (max-width: 1280px) {
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.topbar-logout {
+  padding: 6px 14px;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.topbar-logout:hover {
+  background: #b83209;
+}
+
+/* Tablet comprimido: columnas más pequeñas */
+@media (max-width: 1100px) {
+  .workspace {
+    grid-template-columns: 180px minmax(0, 1fr) 200px;
+  }
+
+  .coord-layout {
+    grid-template-columns: 200px minmax(0, 1fr) 190px;
+  }
+}
+
+/* Tablet: ocultar rails laterales, chat ocupa todo */
+@media (max-width: 860px) {
   .workspace,
   .coord-layout {
     grid-template-columns: 1fr;
     height: auto;
-    min-height: auto;
   }
 
   .left-rail,
@@ -623,16 +676,93 @@ body {
     display: none;
   }
 
-  .chat-panel,
-  .coord-chat {
-    min-height: calc(100dvh - 180px);
+  .chat-panel {
+    min-height: calc(100dvh - 160px);
   }
 
+  .coord-chat {
+    min-height: calc(100dvh - 130px);
+  }
+
+  .channel-status {
+    font-size: 13px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
   .topbar {
-    grid-template-columns: 1fr auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .brand strong {
+    font-size: 16px;
   }
 
   .channel-status {
     display: none;
+  }
+
+  .coord-top {
+    padding: 6px 12px;
+    gap: 8px;
+  }
+
+  .coord-brand strong {
+    font-size: 14px;
+  }
+
+  .coord-top > p {
+    display: none;
+  }
+
+  .coord-alertbar {
+    height: auto;
+    padding: 6px 12px;
+    font-size: 11px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 6px;
+  }
+
+  .coord-alertbar button {
+    margin-left: auto;
+  }
+
+  .chat-panel {
+    padding: 12px 8px;
+    min-height: calc(100dvh - 140px);
+  }
+
+  .coord-chat {
+    padding: 10px 8px;
+    min-height: calc(100dvh - 120px);
+  }
+
+  .composer {
+    width: calc(100% - 24px);
+  }
+
+  .composer input {
+    font-size: 15px;
+    padding: 0 14px;
+    min-height: 50px;
+  }
+
+  .composer button {
+    font-size: 14px;
+  }
+
+  .message {
+    max-width: 92%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .composer-wrap {
+    height: 78px;
   }
 }

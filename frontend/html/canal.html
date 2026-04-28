@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/canal.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
 </head>
 <body class="page page--canal" data-chat-role="general">
   <header class="topbar">
@@ -25,9 +26,9 @@
       <span id="active-incident-title">Sin emergencia activa</span>
     </div>
 
-    <div style="display: flex; gap: 1rem; align-items: center;">
+    <div class="topbar-actions">
       <div class="user-chip">Usuario</div>
-      <button id="logout-btn" style="padding: 0.5rem 1rem; background: #d4380d; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; font-weight: 500;">Cerrar sesión</button>
+      <button id="logout-btn" class="topbar-logout">Cerrar sesión</button>
     </div>
   </header>
 
@@ -79,6 +80,7 @@
   </footer>
 
   <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/modal.js"></script>
   <script src="../js/canal.js"></script>
 </body>
 </html>

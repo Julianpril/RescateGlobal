@@ -220,13 +220,17 @@ function applyChannelStats(stats) {
 
 function setupSocket() {
   if (!session?.token || typeof io === 'undefined') {
-    if (!isCoordinatorPage) {
-      createSystemNotice('Sesion no valida. Inicia sesion desde login.');
-    }
+    createSystemNotice('Sesion no valida. Inicia sesion desde login.');
     return null;
   }
 
-  const socket = io(SERVER_URL, { transports: ['websocket'] });
+  const socket = io(SERVER_URL, {
+    transports: ['websocket', 'polling'],
+    reconnection: true,
+    reconnectionAttempts: Infinity,
+    reconnectionDelay: 1000,
+    reconnectionDelayMax: 5000,
+  });
 
   socket.on('connect', () => {
     socket.emit('join:channel', { token: session.token });
@@ -263,6 +267,21 @@ function setupSocket() {
   });
 
   socket.on('chat:message', (message) => appendMessage(message));
+
+  socket.on('disconnect', (reason) => {
+    createSystemNotice(`Conexion perdida (${reason}). Reintentando...`);
+  });
+
+  socket.on('reconnect', () => {
+    createSystemNotice('Conexion restablecida.');
+    socket.emit('join:channel', { token: session.token });
+    socket.emit('load:incidents', { token: session.token });
+    socket.emit('load:notifications', { token: session.token });
+  });
+
+  socket.on('connect_error', () => {
+    createSystemNotice('No se pudo conectar al servidor en tiempo real.');
+  });
 
   socket.on('chat:system', (message) => {
     createSystemNotice(message.text);
@@ -302,35 +321,30 @@ function setupSocket() {
   return socket;
 }
 
-function requestOpenEmergency(activeSocket) {
+async function requestOpenEmergency(activeSocket) {
   if (!activeSocket || session?.user?.role !== 'coordinador') return;
-
-  const title = window.prompt('Nombre de la emergencia activa:');
-  if (!title || !title.trim()) return;
-
-  const location = window.prompt('Ubicacion (barrio/sector):', session?.user?.location || '') || '';
-  const description = window.prompt('Descripcion breve de la emergencia:', 'Activada por coordinador') || 'Activada por coordinador';
-
+  const data = await RGModal.openEmergencyForm(session?.user?.location || '');
+  if (!data) return;
   activeSocket.emit('incident:open', {
-    title: title.trim(),
-    location: location.trim() || (session?.user?.location || 'Zona sin definir'),
-    description: description.trim() || 'Activada por coordinador',
+    title: data.title,
+    location: data.location || session?.user?.location || 'Zona sin definir',
+    description: data.description,
     severity: 'critical',
   });
 }
 
-function requestCloseEmergency(activeSocket) {
+async function requestCloseEmergency(activeSocket) {
   if (!activeSocket || session?.user?.role !== 'coordinador') return;
-  const approved = window.confirm('Confirmar cierre de la emergencia activa?');
+  const approved = await RGModal.confirm('¿Confirmar cierre de la emergencia activa?');
   if (!approved) return;
   activeSocket.emit('incident:close');
 }
 
-function requestCoordinatorAlert(activeSocket) {
+async function requestCoordinatorAlert(activeSocket) {
   if (!activeSocket || session?.user?.role !== 'coordinador') return;
-  const alertText = window.prompt('Mensaje de alerta critica (se enviara a todos):', 'ALERTA: ');
-  if (!alertText || !alertText.trim()) return;
-  activeSocket.emit('chat:alert', { text: alertText.trim() });
+  const alertText = await RGModal.alertPrompt();
+  if (!alertText) return;
+  activeSocket.emit('chat:alert', { text: alertText });
 }
 
 applyUserData();
