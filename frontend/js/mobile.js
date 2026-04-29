@@ -207,25 +207,21 @@ function applyChannelStats(stats) {
   if (coordDurationNode) coordDurationNode.textContent = duration;
 }
 
-function requestOpenEmergencyMobile(activeSocket) {
+async function requestOpenEmergencyMobile(activeSocket) {
   if (!activeSocket || session?.user?.role !== "coordinador") return;
-  const title = window.prompt("Nombre de la emergencia activa:");
-  if (!title || !title.trim()) return;
-
-  const location = window.prompt("Ubicacion (barrio/sector):", session?.user?.location || "") || "";
-  const description = window.prompt("Descripcion breve de la emergencia:", "Activada por coordinador") || "Activada por coordinador";
-
+  const data = await RGModal.openEmergencyForm(session?.user?.location || "");
+  if (!data) return;
   activeSocket.emit("incident:open", {
-    title: title.trim(),
-    location: location.trim() || (session?.user?.location || "Zona sin definir"),
-    description: description.trim() || "Activada por coordinador",
+    title: data.title,
+    location: data.location || session?.user?.location || "Zona sin definir",
+    description: data.description,
     severity: "critical",
   });
 }
 
-function requestCloseEmergencyMobile(activeSocket) {
+async function requestCloseEmergencyMobile(activeSocket) {
   if (!activeSocket || session?.user?.role !== "coordinador") return;
-  const approved = window.confirm("Confirmar cierre de la emergencia activa?");
+  const approved = await RGModal.confirm("¿Confirmar cierre de la emergencia activa?");
   if (!approved) return;
   activeSocket.emit("incident:close");
 }
