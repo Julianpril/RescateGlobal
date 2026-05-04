@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/canal.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
 </head>
 <body class="page page--coord" data-chat-role="coordinador">
   <header class="coord-top">
@@ -53,6 +54,7 @@
       <h2>Acciones</h2>
       <button id="open-emergency-btn" class="action action--warn" type="button">ABRIR EMERGENCIA</button>
       <button id="send-alert-btn" class="action" type="button">Enviar Alerta Critica</button>
+      <button id="clear-chat-btn" class="action" type="button">LIMPIAR CHAT</button>
       <button id="close-emergency-btn" class="action action--danger" type="button">CERRAR EMERGENCIA</button>
       <button id="coord-logout-btn" class="action" type="button">Cerrar sesion</button>
       <p class="hint">Notificara a todos los voluntarios conectados</p>
@@ -86,6 +88,7 @@
   </main>
 
   <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/modal.js"></script>
   <script src="../js/canal.js"></script>
 </body>
 </html>

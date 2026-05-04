@@ -1,4 +1,4 @@
-const SERVER_URL = "http://localhost:3000";
+const SERVER_URL = window.location.origin;
 const session = JSON.parse(localStorage.getItem("rgSession") || "null");
 const chatView = document.querySelector('.mobile-view[data-view="chat"]');
 const chatList = document.getElementById("mobile-chat-list") || chatView;
@@ -13,6 +13,21 @@ if (!session?.token) {
 
 function formatTime(dateValue) {
   return new Date(dateValue).toLocaleTimeString("es-CO", { hour: "2-digit", minute: "2-digit" });
+}
+
+function isVolunteerHelping(incident) {
+  if (!session?.user?.id || session.user.role === "coordinador") return false;
+  return Array.isArray(incident.helperIds) && incident.helperIds.includes(session.user.id);
+}
+
+function requestIncidentHelp(activeSocket, incident) {
+  if (!activeSocket || !incident || session?.user?.role === "coordinador") return;
+
+  if (isVolunteerHelping(incident)) {
+    activeSocket.emit("incident:leave", { incidentId: incident.id });
+  } else {
+    activeSocket.emit("incident:join", { incidentId: incident.id });
+  }
 }
 
 function switchMobileView(target) {
@@ -83,8 +98,32 @@ function createIncidentCard(incident) {
   card.appendChild(desc);
 
   const meta = document.createElement("small");
-  meta.textContent = `${incident.location || "Zona"} - Hace ${incident.minutesAgo || 0} min - ${incident.volunteerCount || 0} reportes`;
+  const reportCount = incident.volunteerCount || 0;
+  const helperCount = incident.helperCount || (Array.isArray(incident.helperIds) ? incident.helperIds.length : 0);
+  meta.textContent = `${incident.location || "Zona"} - Hace ${incident.minutesAgo || 0} min - ${reportCount} reportes`;
   card.appendChild(meta);
+
+  const footer = document.createElement("div");
+  footer.className = "incident-actions";
+
+  const helperInfo = document.createElement("small");
+  helperInfo.className = "incident-helper-info";
+  helperInfo.textContent = helperCount > 0
+    ? `${helperCount} voluntario${helperCount === 1 ? "" : "s"} en camino`
+    : "Aun sin voluntarios asignados";
+  footer.appendChild(helperInfo);
+
+  if (session?.user?.role !== "coordinador") {
+    const button = document.createElement("button");
+    const helping = isVolunteerHelping(incident);
+    button.type = "button";
+    button.className = helping ? "incident-cta incident-cta--active" : "incident-cta";
+    button.textContent = helping ? "Ya voy" : "Me sumo";
+    button.addEventListener("click", () => requestIncidentHelp(socket, incident));
+    footer.appendChild(button);
+  }
+
+  card.appendChild(footer);
 
   return card;
 }
@@ -226,6 +265,13 @@ async function requestCloseEmergencyMobile(activeSocket) {
   activeSocket.emit("incident:close");
 }
 
+async function requestClearChatMobile(activeSocket) {
+  if (!activeSocket || session?.user?.role !== "coordinador") return;
+  const approved = await RGModal.confirm("Esto eliminara todos los mensajes del chat. ¿Continuar?");
+  if (!approved) return;
+  activeSocket.emit("chat:clear");
+}
+
 document.querySelectorAll(".nav-item").forEach((button) => {
   button.addEventListener("click", () => switchMobileView(button.dataset.target));
 });
@@ -303,6 +349,10 @@ if (session?.token && typeof io !== "undefined") {
 
 document.getElementById("coord-mobile-open-emergency-btn")?.addEventListener("click", () => {
   requestOpenEmergencyMobile(socket);
+});
+
+document.getElementById("coord-mobile-clear-chat-btn")?.addEventListener("click", () => {
+  requestClearChatMobile(socket);
 });
 
 document.getElementById("coord-mobile-close-emergency-btn")?.addEventListener("click", () => {

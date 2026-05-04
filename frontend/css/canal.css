@@ -288,6 +288,40 @@ body {
   font-size: 10px;
 }
 
+.incident-actions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.incident-helper-info {
+  flex: 1 1 160px;
+}
+
+.incident-cta {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(46, 107, 255, 0.18);
+}
+
+.incident-cta--active {
+  background: var(--dark);
+}
+
+.incident-cta:active {
+  transform: translateY(1px);
+}
+
 .incident--critical { border-left-color: var(--brand); }
 .incident--high { border-left-color: var(--high); }
 .incident--medium { border-left-color: var(--medium); }

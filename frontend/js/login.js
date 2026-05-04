@@ -5,7 +5,43 @@ const submitBtn = document.getElementById('submit-btn');
 const feedback = document.getElementById('login-feedback');
 const loginForm = document.getElementById('login-form');
 
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = `${window.location.origin}/api`;
+
+async function hydrateGoogleSessionFromQuery() {
+  const currentUrl = new URL(window.location.href);
+  const token = currentUrl.searchParams.get('sessionToken');
+  const googleError = currentUrl.searchParams.get('googleError');
+
+  if (googleError) {
+    showFeedback(decodeURIComponent(googleError));
+    currentUrl.searchParams.delete('googleError');
+    window.history.replaceState({}, '', currentUrl.toString());
+    return;
+  }
+
+  if (!token) return;
+
+  try {
+    const response = await fetch(`${API_BASE_URL}/auth/session?token=${encodeURIComponent(token)}`);
+    const result = await response.json();
+
+    if (!response.ok || !result.ok) {
+      throw new Error(result.message || 'No fue posible recuperar la sesion de Google.');
+    }
+
+    localStorage.setItem('rgSession', JSON.stringify({
+      token: result.token,
+      user: result.user,
+    }));
+
+    currentUrl.searchParams.delete('sessionToken');
+    window.history.replaceState({}, '', currentUrl.toString());
+    const isMobileGoogle = window.matchMedia('(max-width: 768px)').matches;
+    window.location.href = isMobileGoogle ? './canal-mobile.html' : './canal.html';
+  } catch (error) {
+    showFeedback(error.message || 'No fue posible iniciar con Google.');
+  }
+}
 
 function setMode(mode) {
   const isGeneral = mode === 'general';
@@ -80,19 +116,23 @@ loginForm.addEventListener('submit', async (event) => {
 
     showFeedback(`Bienvenido/a ${result.user.displayName}.`, true);
 
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
     if (result.user.role === 'coordinador') {
-      window.location.href = './coordinador.html';
+      window.location.href = isMobile ? './coordinador-mobile.html' : './coordinador.html';
       return;
     }
 
-    window.location.href = './canal.html';
+    window.location.href = isMobile ? './canal-mobile.html' : './canal.html';
   } catch (error) {
     showFeedback('No hay conexion con el servidor.');
   }
 });
 
 document.querySelector('.btn-google')?.addEventListener('click', () => {
-  showFeedback('Google OAuth pendiente de configuracion en backend.');
+  showFeedback('Redirigiendo a Google...');
+  window.location.href = `${API_BASE_URL}/auth/google`;
 });
 
 setMode('general');
+hydrateGoogleSessionFromQuery();

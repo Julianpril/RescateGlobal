@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/mobile.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
 </head>
 <body class="mobile-page mobile-page--coord">
   <header class="mobile-status">9:41 <span>100%</span></header>
@@ -42,6 +43,7 @@
     <section class="panel-card">
       <h2>Acciones de Coordinador</h2>
       <button id="coord-mobile-open-emergency-btn" class="btn-outline" type="button">Abrir Emergencia</button>
+      <button id="coord-mobile-clear-chat-btn" class="btn-outline" type="button">Limpiar Chat</button>
       <button id="coord-mobile-close-emergency-btn" class="btn-solid" type="button">Cerrar Emergencia</button>
       <button id="coord-mobile-logout-btn" class="btn-outline" type="button">Cerrar sesion</button>
     </section>
@@ -60,6 +62,7 @@
   </footer>
 
   <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+  <script src="../js/modal.js"></script>
   <script src="../js/mobile.js"></script>
 </body>
 </html>

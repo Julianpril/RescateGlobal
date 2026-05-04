@@ -1,0 +1,844 @@
+{
+  "sessions": [
+    {
+      "token": "1b936c353934fd88c500d67755bd2d4005c575b4c3a726d8",
+      "user": {
+        "id": "u-gen-1777470588316",
+        "displayName": "xdasd",
+        "role": "general",
+        "location": "Villa Universitaria, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777470588316
+    },
+    {
+      "token": "486d7f495ad9530ac9b9448a55d8b224edb83c5bc1bfb873",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777470570139
+    },
+    {
+      "token": "aece0ce72fb011411ee5cdd8629baf5b7712c7a3796844db",
+      "user": {
+        "id": "u-gen-1777470524899",
+        "displayName": "awo",
+        "role": "general",
+        "location": "Los Muiscas, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777470524899
+    },
+    {
+      "token": "777f7548812094430d3d7b7eb25064bd7cec5841873151cc",
+      "user": {
+        "id": "u-gen-1777470480099",
+        "displayName": "kkk",
+        "role": "general",
+        "location": "Suamox, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777470480099
+    },
+    {
+      "token": "e71e142961cf20714613c2ab48cadf632f88c91a90ca8519",
+      "user": {
+        "id": "u-gen-1777470280002",
+        "displayName": "Camilo Ayala",
+        "role": "general",
+        "location": "La Granja, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777470280002
+    },
+    {
+      "token": "f046cb26133e750103d7f8f24c4fb9ce9bc7e8891cb22712",
+      "user": {
+        "id": "u-gen-1777470256906",
+        "displayName": "juan",
+        "role": "general",
+        "location": "La Maria, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777470256906
+    },
+    {
+      "token": "6dd209fd23a5a0484c2d84d0496efa17cdb7fdd60eccc2fe",
+      "user": {
+        "id": "u-gen-1777469965863",
+        "displayName": "kuku",
+        "role": "general",
+        "location": "La Granja, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777469965863
+    },
+    {
+      "token": "7e0f25d314679451fa56a8b9443840692dd8b914090f49a2",
+      "user": {
+        "id": "u-gen-1777469935001",
+        "displayName": "julian",
+        "role": "general",
+        "location": "La Maria, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777469935003
+    },
+    {
+      "token": "c5225af6e7177397aeb13f2b1ca44007884c25c62d06e50f",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777469206234
+    },
+    {
+      "token": "68ca1043c7f17717cf314bd419034c26001d0a7a07c55e7d",
+      "user": {
+        "id": "u-gen-1777469081749",
+        "displayName": "karen mamacita brr",
+        "role": "general",
+        "location": "Los Muiscas, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777469081749
+    },
+    {
+      "token": "f79bc8051c89c1344f4862706b1c8f5d65e908ca7c1c8d4a",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468972132
+    },
+    {
+      "token": "2fd024021d7a61dceb4e85dc670e5fb7c34520ae471e724e",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468918612
+    },
+    {
+      "token": "c70de6405b8623c85e00c2f12641b7131fdaf57d381eb910",
+      "user": {
+        "id": "u-gen-1777468899784",
+        "displayName": "andres",
+        "role": "general",
+        "location": "Villa Universitaria, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468899784
+    },
+    {
+      "token": "8ab1edd8abf113cac8384515bdd87a81553da0273094dbef",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468868850
+    },
+    {
+      "token": "5e0ae132b46bd09959230cb466fe2ca272a2375f480cdcc1",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468814593
+    },
+    {
+      "token": "de39ab2c1cd517174d7884fa0024072a99242bb79cfb22e8",
+      "user": {
+        "id": "u-gen-1777468585539",
+        "displayName": "Antonio Rekt",
+        "role": "general",
+        "location": "Las Quintas, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468585540
+    },
+    {
+      "token": "320c865e50bc2249c85bd65d96272a85bc72f6d00a054dd1",
+      "user": {
+        "id": "u-gen-1777468581791",
+        "displayName": "karen",
+        "role": "general",
+        "location": "El Bosque, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468581791
+    },
+    {
+      "token": "5690b48833efb789a8696e31b6b278a39fb76942ff69eaed",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468569561
+    },
+    {
+      "token": "cf710e86f9505cf9905103b068312ae13732dfac3d46c8df",
+      "user": {
+        "id": "g-jgabril@uniboyaca.edu.co",
+        "displayName": "JULIÁN ABRIL HERRERA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "jgabril@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI0FrM7-0ifK2pSdMGpb0kKOrD3-hKMT3FpVxn8xxVUAWasnoew=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468485388
+    },
+    {
+      "token": "094ea71ee042a92589e76e7d0b1be245fa76204e2b518867",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468437763
+    },
+    {
+      "token": "a4091be4ceb0bd0ab27cf8aae36f07ba90a0008079c279ef",
+      "user": {
+        "id": "u-gen-1777468406970",
+        "displayName": "julianpril1482@gmail.com",
+        "role": "general",
+        "location": "Mesopotamia, Tunja, Boyaca"
+      },
+      "provider": "local",
+      "createdAt": 1777468406970
+    },
+    {
+      "token": "6d862c50998b2ddb8ab16389adc899676d64579cde4c1f1a",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468272111
+    },
+    {
+      "token": "313179f668d9966585f30d5873340651d27a0507df69afb3",
+      "user": {
+        "id": "g-asferrucho@uniboyaca.edu.co",
+        "displayName": "ANDRES SANTIAGO FERRUCHO ESPITIA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "asferrucho@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI2X33G-VkL_P8oXprzwp8YsW5jwOOTDshRV3y6hWPsp88m8554=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468247294
+    },
+    {
+      "token": "aab861481624de2980802c1fbdbce26db26b8b9c145563cc",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468087984
+    },
+    {
+      "token": "0cd0d150b0a5e6f6db651cf8989a9d08b184eb2b7701d70a",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468074508
+    },
+    {
+      "token": "c4a073b70a492c4d8c9a421c03e16a7728a1e917fa9c5411",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468052872
+    },
+    {
+      "token": "407b94322ac717fcb2fdd32913e3efd89e130ba504163a1b",
+      "user": {
+        "id": "g-asferrucho@uniboyaca.edu.co",
+        "displayName": "ANDRES SANTIAGO FERRUCHO ESPITIA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "asferrucho@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI2X33G-VkL_P8oXprzwp8YsW5jwOOTDshRV3y6hWPsp88m8554=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468032953
+    },
+    {
+      "token": "2ce8227a56a748a7d8d4f1f3bfdc11b303864a6726d8564c",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777468005327
+    },
+    {
+      "token": "daace876c350c0daec666a0a5dae73093aae3238321a8e12",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777467986127
+    },
+    {
+      "token": "e8175c899238b6faf55bfb5f656f8952379ec07168a7d078",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777467962933
+    },
+    {
+      "token": "0e4e03c23788a16cea2fe7a9aedcdbddfad88b6ae8e1b4a5",
+      "user": {
+        "id": "g-jgabril@uniboyaca.edu.co",
+        "displayName": "JULIÁN ABRIL HERRERA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "jgabril@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI0FrM7-0ifK2pSdMGpb0kKOrD3-hKMT3FpVxn8xxVUAWasnoew=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777467934153
+    },
+    {
+      "token": "0ea7cd7f70d2e04f5c659c95b8c5902ded2c454561b8c4b3",
+      "user": {
+        "id": "g-jgabril@uniboyaca.edu.co",
+        "displayName": "JULIÁN ABRIL HERRERA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "jgabril@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI0FrM7-0ifK2pSdMGpb0kKOrD3-hKMT3FpVxn8xxVUAWasnoew=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777467654538
+    },
+    {
+      "token": "ae58f02094a9f5e69aeddac09ace1ca5a2310556e69ab94d",
+      "user": {
+        "id": "g-julianpril1482@gmail.com",
+        "displayName": "Julian Abril",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "julianpril1482@gmail.com",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocK-EOuJgVOMH3u-NHP5cJdVcDZCcKt0CnQe8pis6YnCLnv7CPwy=s96-c",
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777467447499
+    },
+    {
+      "token": "3634fe7992cce563f0c64c9010142aeace50775779798844",
+      "user": {
+        "id": "g-prueba@example.com",
+        "displayName": "Prueba Google",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "prueba@example.com",
+        "photoURL": null,
+        "provider": "google"
+      },
+      "provider": "google",
+      "createdAt": 1777466359815
+    }
+  ],
+  "logins": [
+    {
+      "token": "1b936c353934fd88c500d67755bd2d4005c575b4c3a726d8",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777470588316",
+        "displayName": "xdasd",
+        "role": "general",
+        "location": "Villa Universitaria, Tunja, Boyaca"
+      },
+      "createdAt": 1777470588316
+    },
+    {
+      "token": "486d7f495ad9530ac9b9448a55d8b224edb83c5bc1bfb873",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777470570139
+    },
+    {
+      "token": "aece0ce72fb011411ee5cdd8629baf5b7712c7a3796844db",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777470524899",
+        "displayName": "awo",
+        "role": "general",
+        "location": "Los Muiscas, Tunja, Boyaca"
+      },
+      "createdAt": 1777470524899
+    },
+    {
+      "token": "777f7548812094430d3d7b7eb25064bd7cec5841873151cc",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777470480099",
+        "displayName": "kkk",
+        "role": "general",
+        "location": "Suamox, Tunja, Boyaca"
+      },
+      "createdAt": 1777470480099
+    },
+    {
+      "token": "e71e142961cf20714613c2ab48cadf632f88c91a90ca8519",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777470280002",
+        "displayName": "Camilo Ayala",
+        "role": "general",
+        "location": "La Granja, Tunja, Boyaca"
+      },
+      "createdAt": 1777470280002
+    },
+    {
+      "token": "f046cb26133e750103d7f8f24c4fb9ce9bc7e8891cb22712",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777470256906",
+        "displayName": "juan",
+        "role": "general",
+        "location": "La Maria, Tunja, Boyaca"
+      },
+      "createdAt": 1777470256906
+    },
+    {
+      "token": "6dd209fd23a5a0484c2d84d0496efa17cdb7fdd60eccc2fe",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777469965863",
+        "displayName": "kuku",
+        "role": "general",
+        "location": "La Granja, Tunja, Boyaca"
+      },
+      "createdAt": 1777469965863
+    },
+    {
+      "token": "7e0f25d314679451fa56a8b9443840692dd8b914090f49a2",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777469935001",
+        "displayName": "julian",
+        "role": "general",
+        "location": "La Maria, Tunja, Boyaca"
+      },
+      "createdAt": 1777469935003
+    },
+    {
+      "token": "c5225af6e7177397aeb13f2b1ca44007884c25c62d06e50f",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777469206234
+    },
+    {
+      "token": "68ca1043c7f17717cf314bd419034c26001d0a7a07c55e7d",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777469081749",
+        "displayName": "karen mamacita brr",
+        "role": "general",
+        "location": "Los Muiscas, Tunja, Boyaca"
+      },
+      "createdAt": 1777469081749
+    },
+    {
+      "token": "f79bc8051c89c1344f4862706b1c8f5d65e908ca7c1c8d4a",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777468972132
+    },
+    {
+      "token": "2fd024021d7a61dceb4e85dc670e5fb7c34520ae471e724e",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777468918612
+    },
+    {
+      "token": "c70de6405b8623c85e00c2f12641b7131fdaf57d381eb910",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777468899784",
+        "displayName": "andres",
+        "role": "general",
+        "location": "Villa Universitaria, Tunja, Boyaca"
+      },
+      "createdAt": 1777468899784
+    },
+    {
+      "token": "8ab1edd8abf113cac8384515bdd87a81553da0273094dbef",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468868850
+    },
+    {
+      "token": "5e0ae132b46bd09959230cb466fe2ca272a2375f480cdcc1",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777468814593
+    },
+    {
+      "token": "de39ab2c1cd517174d7884fa0024072a99242bb79cfb22e8",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777468585539",
+        "displayName": "Antonio Rekt",
+        "role": "general",
+        "location": "Las Quintas, Tunja, Boyaca"
+      },
+      "createdAt": 1777468585540
+    },
+    {
+      "token": "320c865e50bc2249c85bd65d96272a85bc72f6d00a054dd1",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777468581791",
+        "displayName": "karen",
+        "role": "general",
+        "location": "El Bosque, Tunja, Boyaca"
+      },
+      "createdAt": 1777468581791
+    },
+    {
+      "token": "5690b48833efb789a8696e31b6b278a39fb76942ff69eaed",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777468569561
+    },
+    {
+      "token": "cf710e86f9505cf9905103b068312ae13732dfac3d46c8df",
+      "provider": "google",
+      "user": {
+        "id": "g-jgabril@uniboyaca.edu.co",
+        "displayName": "JULIÁN ABRIL HERRERA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "jgabril@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI0FrM7-0ifK2pSdMGpb0kKOrD3-hKMT3FpVxn8xxVUAWasnoew=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468485388
+    },
+    {
+      "token": "094ea71ee042a92589e76e7d0b1be245fa76204e2b518867",
+      "provider": "local",
+      "user": {
+        "id": "u-coord-1",
+        "displayName": "Coordinador",
+        "role": "coordinador",
+        "location": "Tunja, Boyaca"
+      },
+      "createdAt": 1777468437763
+    },
+    {
+      "token": "a4091be4ceb0bd0ab27cf8aae36f07ba90a0008079c279ef",
+      "provider": "local",
+      "user": {
+        "id": "u-gen-1777468406970",
+        "displayName": "julianpril1482@gmail.com",
+        "role": "general",
+        "location": "Mesopotamia, Tunja, Boyaca"
+      },
+      "createdAt": 1777468406970
+    },
+    {
+      "token": "6d862c50998b2ddb8ab16389adc899676d64579cde4c1f1a",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468272111
+    },
+    {
+      "token": "313179f668d9966585f30d5873340651d27a0507df69afb3",
+      "provider": "google",
+      "user": {
+        "id": "g-asferrucho@uniboyaca.edu.co",
+        "displayName": "ANDRES SANTIAGO FERRUCHO ESPITIA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "asferrucho@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI2X33G-VkL_P8oXprzwp8YsW5jwOOTDshRV3y6hWPsp88m8554=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468247294
+    },
+    {
+      "token": "aab861481624de2980802c1fbdbce26db26b8b9c145563cc",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468087984
+    },
+    {
+      "token": "0cd0d150b0a5e6f6db651cf8989a9d08b184eb2b7701d70a",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468074508
+    },
+    {
+      "token": "c4a073b70a492c4d8c9a421c03e16a7728a1e917fa9c5411",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468052872
+    },
+    {
+      "token": "407b94322ac717fcb2fdd32913e3efd89e130ba504163a1b",
+      "provider": "google",
+      "user": {
+        "id": "g-asferrucho@uniboyaca.edu.co",
+        "displayName": "ANDRES SANTIAGO FERRUCHO ESPITIA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "asferrucho@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI2X33G-VkL_P8oXprzwp8YsW5jwOOTDshRV3y6hWPsp88m8554=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468032953
+    },
+    {
+      "token": "2ce8227a56a748a7d8d4f1f3bfdc11b303864a6726d8564c",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777468005327
+    },
+    {
+      "token": "daace876c350c0daec666a0a5dae73093aae3238321a8e12",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777467986127
+    },
+    {
+      "token": "e8175c899238b6faf55bfb5f656f8952379ec07168a7d078",
+      "provider": "google",
+      "user": {
+        "id": "g-leriverap@uniboyaca.edu.co",
+        "displayName": "LAURA ESTEFANY RIVERA PEREZ",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "leriverap@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJi123uGUeTGOA2LoT0qaw5QZwkvHT2e6qzaxRpP2yCFsO60Q=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777467962933
+    },
+    {
+      "token": "0e4e03c23788a16cea2fe7a9aedcdbddfad88b6ae8e1b4a5",
+      "provider": "google",
+      "user": {
+        "id": "g-jgabril@uniboyaca.edu.co",
+        "displayName": "JULIÁN ABRIL HERRERA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "jgabril@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI0FrM7-0ifK2pSdMGpb0kKOrD3-hKMT3FpVxn8xxVUAWasnoew=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777467934153
+    },
+    {
+      "token": "0ea7cd7f70d2e04f5c659c95b8c5902ded2c454561b8c4b3",
+      "provider": "google",
+      "user": {
+        "id": "g-jgabril@uniboyaca.edu.co",
+        "displayName": "JULIÁN ABRIL HERRERA",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "jgabril@uniboyaca.edu.co",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocI0FrM7-0ifK2pSdMGpb0kKOrD3-hKMT3FpVxn8xxVUAWasnoew=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777467654538
+    },
+    {
+      "token": "ae58f02094a9f5e69aeddac09ace1ca5a2310556e69ab94d",
+      "provider": "google",
+      "user": {
+        "id": "g-julianpril1482@gmail.com",
+        "displayName": "Julian Abril",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "julianpril1482@gmail.com",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocK-EOuJgVOMH3u-NHP5cJdVcDZCcKt0CnQe8pis6YnCLnv7CPwy=s96-c",
+        "provider": "google"
+      },
+      "createdAt": 1777467447499
+    },
+    {
+      "token": "3634fe7992cce563f0c64c9010142aeace50775779798844",
+      "provider": "google",
+      "user": {
+        "id": "g-prueba@example.com",
+        "displayName": "Prueba Google",
+        "role": "general",
+        "location": "Acceso con Google",
+        "email": "prueba@example.com",
+        "photoURL": null,
+        "provider": "google"
+      },
+      "createdAt": 1777466359815
+    }
+  ]
+}
